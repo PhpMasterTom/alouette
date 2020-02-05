@@ -7,6 +7,8 @@ class Alouette {
 	 * @return string
 	 */
 
+	
+
 
 	/** Méthode chanson
 	 * Retourne la chanson au complet dans un div.chanson
@@ -64,7 +66,12 @@ class Alouette {
 	 * @return string
 	 * @note L'appel est dans un div.appel et la réponse, dans un div.reponse
 	 */
-
+	static public function appelReponse() {
+		$resultat = '';
+		$resultat .= '<div class="appel">Je te plumerai la tête</div>';
+		$resultat .= '<div class="reponse">Je te plumerai la tête</div>';
+		return $resultat;
+	}
 
 	/** Méthode enumMembres
 	 * Génère l'énumération des membres passée en paramètre.
@@ -81,6 +88,6 @@ class Alouette {
 	 * @uses appelReponse
 	 * @return string
 	 */
-
+	
 
 }

@@ -1,6 +1,9 @@
+<?php
+include("../Alouette.php");
+include("../donnees.inc.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="css/alouette.css" />
@@ -52,9 +55,9 @@
 							<div>Alouette, gentille Alouette</div>
 							<div>Alouette, je te plumerai.</div>
 						</div>
-					</div>
-					<div class="appel">Je te plumerai le bec</div>
-					<div class="reponse">Je te plumerai le bec</div>
+					<?php echo Alouette::appelReponse(); ?>
+					
+
 					<div class="appel">Et le bec</div>
 					<div class="reponse">Et le bec</div>
 					<div class="appel">Et la tête</div>
